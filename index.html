@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juan de Tomaso</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"
+      integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="fullpage">
+      <div class="section s1">
+        <div class="content1">
+          <header class="header">
+            <nav class="nav">
+              <ul>
+                <li><a href="#main">Hola</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contacto">Contact</a></li>
+              </ul>
+            </nav>
+          </header>
+          <div class="main">
+            <section class="main-section">
+              <h2>¡Hola! soy</h2>
+              <h1>Juan de Tomaso</h1>
+              <h3>Desarrollador Frontend y politólogo</h3>
+            </section>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTbth3544zGBPxzjXiPXp22x2Ay0dwS4mT3GA&usqp=CAU"
+              alt="fotopc"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="section s2">
+        <section class="slide h1">My projects</section>
+        <section class="slide">
+          <div class="content-vainilla-js">
+            <h1>Vainilla Javascript</h1>
+            <section class="project-section">
+              <article class="project p1">
+                <a href="#">
+                  <img
+                    src="memoryGame/memoryGame/memoryGameImg.png"
+                    alt="previewMG"
+                  />
+                  <span>Memory Game</span>
+                </a>
+              </article>
+              <article class="project p1">
+                <a href="#">
+                  <img
+                    src="PiedraPapelOTijera/PiedraPapeloTijera/previewGame.png"
+                    alt="previewPPT"
+                  />
+                  <span>Piedra, Papel o Tijera</span>
+                </a>
+              </article>
+              <article class="project p1">
+                <a href="#">
+                  <img
+                    src="horseGame/horseGame/preview.png"
+                    alt="previewHG"
+                  />
+                  <span>Horse Game</span>
+                </a>
+              </article>
+              <article class="project p1">
+                <a href="#">
+                  <img
+                    src="DrumKit/DrumKit/drumFoto.png"
+                    alt="previewDK"
+                  />
+                  <span>Drum Kit</span>
+                </a>
+              </article>
+              <article class="project p1">
+                <a href="#">
+                  <img
+                    src="PomodoroTimer/previewPT.png"
+                    alt="previewPT"
+                  />
+                  <span>Pomodoro Timer</span>
+                </a>
+              </article>
+              <article class="project p1">
+                <a href="#">
+                  <img
+                    src="canvasCourse/previewC.png"
+                    alt="previewMG"
+                  />
+                  <span>Canvas Bubbles</span>
+                </a>
+              </article>
+            </section>
+          </div>
+        </section>
+        <section class="slide">React</section>
+      </div>
+
+      <div class="section s3">
+        <h2 class="contact-title">Contact</h2>
+        <section class="data">
+          <span>Email: juandeto10@gmail.com</span>
+          <span
+            ><a
+              href="https://www.linkedin.com/in/juan-de-tomaso-38942a17/"
+              target="_blank"
+              >Linkedin</a
+            ></span
+          >
+        </section>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"
+      integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      new fullpage("#fullpage", {
+        //options here
+        autoScrolling: true,
+        scrollHorizontally: true,
+        anchors: ["main", "portfolio", "contacto"],
+      });
+
+      //métodos
+      fullpage_api.setAllowScrolling(true);
+    </script>
+  </body>
+</html>

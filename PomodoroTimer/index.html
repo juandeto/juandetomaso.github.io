@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main class="container">
+        <nav id="nav">
+            <span data-time="20" class="minutes-btn">20 secs</span>
+            <span data-time="300" class="minutes-btn">work 5</span>
+            <span data-time="900" class="minutes-btn">quick 15</span>
+            <span data-time="1200" class="minutes-btn">snack 20</span>
+            <span  data-time="3600"class="minutes-btn">lunch break</span>
+            <span class="minutes-input">
+            <form name="customForm" id="custom"> 
+                <input type="text" name="minutes" id="inputMinute" placeholder="Ingresa los minutos...">
+            </form>
+            </span>
+         </nav>
+         <div class="timer-container">
+            <div class="timer">
+                <span class="clock">00:00</span>
+                <span class="be-back">be back</SPAN>
+            </div>
+         </div>   
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
