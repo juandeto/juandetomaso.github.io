@@ -13,6 +13,11 @@
     --beige:#EAE2B7;
 }
 
+.section{
+    min-height: 100vh;
+    width: 100%;
+}
+
 .s1{
 background: var(--baige);
 
@@ -37,7 +42,7 @@ align-items: center;
 }
 
 .header .nav{
-    margin: 0 180px;
+    margin: 0 auto;
 }
 
 
@@ -54,7 +59,7 @@ align-items: center;
 .header .nav li a{
     text-decoration: none;
     color: #003049;
-    font-size: 1.7rem;
+    font-size: 100%;
 }
 
 .header .nav li a:hover,
@@ -70,23 +75,24 @@ align-items: center;
     display: flex;
 align-items: center;
 justify-content: space-around;
+flex-direction: column;
 }
 
 .main h1{
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     text-align: center;
     margin: 20px 0;
 }
 
 .main h2{
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: left;
     color: var(--skin);
     margin: 15px 0;
 }
 
 .main h3{
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: center;
     font-weight: 300;
 }
@@ -96,27 +102,26 @@ text-align: center;
 }
 
 
+
 .s2{
     background: var(--blue);
-    
 
 }
 
 .h1{
     color: var(--beige);
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-top: 40px ;
 }
 
-.content-vainilla-js{
-    height: 100vh;
-}
 
-.content-vainilla-js h1{
+.content-works h1{
     text-align: center;
     color: var(--beige);
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-top: 30px;
 }
 
 .project-section{
@@ -125,13 +130,16 @@ text-align: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 10px;
+    width: 80%;
+    margin: auto;
 }
 .project{
-    width: 400px;
-    height: 250px;
-    margin: 10px;
+    width: 325px;
+    height: 200px;
+    margin: 30px 0;
     background:inherit;
     text-align: center;
+    border-radius: 3px;
 }
 
 .project a{
@@ -139,14 +147,14 @@ text-align: center;
 }
 .project img{
     margin: auto;
-    width: 400px;
-    height: 225px;
+    width: 325px;
+    height: 200px;
     object-fit: contain;
 
 }
 
 .project span{
-    color: var(--beige);
+    color: var(--orange);
     
 }
 
@@ -162,7 +170,10 @@ text-align: center;
     background: var(--beige);
     text-align: center;
     color: var(--red);
-
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .s3 h2{
