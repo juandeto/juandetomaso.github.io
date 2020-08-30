@@ -146,10 +146,15 @@ transition: all 0.5s;
 text-align: center;
 }
 
+
+
+
+
+
 /* ESTILOS DE LA SECCION TRABAJOS */
 
 .s2{
-    background:  var(--orange);
+    background:  var(--skin);
     ;
 
 }
@@ -186,10 +191,10 @@ text-align: center;
     padding: 10px;
     background:inherit;
     text-align: center;
-    border-radius: 45px;
-background: #F77F00;
-box-shadow:  30px 30px 60px #cb6800, 
-             -30px -30px 60px #ff9600;
+    border-radius: 44px;
+background: #FCBD49;
+box-shadow:  30px 30px 45px #dea640, 
+             -30px -30px 45px #ffd452;
 }
 
 .project a{
