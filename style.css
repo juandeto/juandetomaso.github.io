@@ -33,6 +33,7 @@ body{
     align-items: center;
     width: 100%;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 /* ESTILOS DEL HEADER */
@@ -46,7 +47,7 @@ flex-direction: column;
 .nav{
 list-style: none;
 width: 100%;
-overflow: hidden;
+overflow-x: hidden;
 }
 
 .hamburger{
@@ -68,7 +69,7 @@ overflow: hidden;
 
 
 .menu-list{
-    overflow: hidden;
+    overflow-x: hidden;
     width: 70%;
     list-style: none;
     margin: 0;
