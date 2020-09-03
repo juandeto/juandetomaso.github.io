@@ -39,7 +39,6 @@ body{
 /* ESTILOS DEL HEADER */
 .header{
 width: 100%;
-overflow: hidden;
 display: flex;
 flex-direction: column;
 }
@@ -47,7 +46,6 @@ flex-direction: column;
 .nav{
 list-style: none;
 width: 100%;
-overflow-x: hidden;
 }
 
 .hamburger{
