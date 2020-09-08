@@ -16,6 +16,7 @@
 body{
     overflow-x: hidden;
     max-width: 100vw;
+    position: relative;
 }
 
 .section{
@@ -49,9 +50,9 @@ width: 100%;
 }
 
 .hamburger{
-    position: absolute;
-    top: 5%;
-    left: 80%;
+    position: relative;
+    top: 100%;
+    left: -5%;
     width:50px;
     height: 50px;
     background: inherit;
@@ -61,20 +62,33 @@ width: 100%;
     transition: all 0.5s;
 }
 
-.hamburger svg{
+.hamburger{
     color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 35px;
+}
+
+.stripe{
+    width: 45px;
+    height: 4px;
+    border-radius: 3px;
+    margin:  2px 0;
+    background: var(--blue);
+    transition: all 0.5s ease;
 }
 
 
 .menu-list{
     overflow-x: hidden;
-    width: 70%;
+    width: 80%;
     list-style: none;
     margin: 0;
     opacity: 0;
     position: absolute;
     left: 32%;
-    top: 14%;
+    top: 3%;
     transform: translateX(100%);
 transition: all 0.5s ease;
 }
@@ -88,6 +102,8 @@ transition: all 0.5s ease;
     
 }
 
+
+
 /* clase que entra y sale */
 .show{
     opacity: 1;
@@ -96,9 +112,22 @@ transition: all 0.5s ease;
     flex-direction: column;
 }
 
-.rotate{
-    transform: rotate(90deg);
+.rotate1{
+    width: 35px;
+    transform: rotate(45deg);
     transition: all 0.4s ease;
+    display:block;
+    position: relative;
+    top: 31%;
+}
+.rotate2{
+    width: 35px;
+    transform: rotate(-45deg);
+    transition: all 0.4s ease;
+    display:block;
+}
+.rotate3{
+    opacity: 0;
 }
 
 .header .nav li a{
