@@ -224,7 +224,7 @@ text-align: center;
 }
 .project{
     width: 325px;
-    height: 210px;
+    height: 230px;
     display: flex;
     margin: 20px ;
     flex-direction: column;
@@ -239,7 +239,18 @@ box-shadow:  30px 30px 45px #dea640,
 
 .project a{
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
 }
+.project img{
+    margin: auto;
+    margin-bottom: 10px;
+    width: 325px;
+    height: 150px;
+    object-fit: contain;
+
+}
+
 .project img{
     margin: auto;
     margin-bottom: 10px;
