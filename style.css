@@ -202,6 +202,7 @@ text-align: center;
     padding-top: 40px ;
     letter-spacing: 0.196875rem;
     line-height: 1.875;
+    margin-bottom: 40px;
 }
 
 
@@ -218,24 +219,24 @@ text-align: center;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    gap: 3rem;
     padding: 10px;
     width: 80%;
     margin: auto;
 }
 .project{
-    width: 425px;
+    width: 400px;
     height: 230px;
     display: flex;
     padding: 15px 4px;
-    margin: 20px ;
     flex-direction: column;
     justify-content: space-around;
     background:inherit;
     text-align: center;
     border-radius: 5px;
 background: #FCBD49;
-box-shadow:  30px 30px 45px #dea640, 
-             -30px -30px 45px #ffd452;
+box-shadow:  15px 15px 25px #dea640, 
+             -15px -15px 25px #ffd452;
 }
 
 .project a{
@@ -246,17 +247,8 @@ box-shadow:  30px 30px 45px #dea640,
 .project img{
     margin: auto;
     margin-bottom: 10px;
-    width: 325px;
-    height: 150px;
-    object-fit: contain;
-
-}
-
-.project img{
-    margin: auto;
-    margin-bottom: 10px;
-    width: 325px;
-    height: 150px;
+    width: 300px;
+    height: 120px;
     object-fit: contain;
 
 }
@@ -549,6 +541,7 @@ footer span{
     .card h2 {
         font-size: 1.6rem;
     }
+
     .personal-data{
         font-size: 1rem;
     }
