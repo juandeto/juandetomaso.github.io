@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -191,11 +193,10 @@ text-align: center;
 
 .s2{
     background:  var(--skin);
-    ;
-
+    padding-bottom: 40px;
 }
 
-.h1{
+.s2 .h1{
     color: var(--blue);
     text-align: center;
     font-size: 2rem;
@@ -268,7 +269,66 @@ box-shadow:  15px 15px 25px #dea640,
     font-size: 1rem;
 }
 
+/* ABOUT */
+.s3 {
+    min-height: 100vh;
+    width: 100%;
+    background: var(--blue);
+    padding: 32px 0;
+}
 
+.title-about {
+    color: var(--beige);
+    font-size: 2rem;
+}
+
+
+.paragraph-about-container {
+    max-width: 50%;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+.title-about {
+    text-align: center;
+    padding: 32px 8px;
+}
+
+.paragraph-about {
+    line-height: 2rem;
+    color: var(--beige);
+    font-size: 1.2rem;
+}
+
+.about-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 50%;
+    min-width: 300px;
+    margin: 32px auto 0px auto;
+}
+
+.about-figure {
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.about-figure img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.about-figure figcaption {
+    margin-top: 16px;
+    font-size: 1.1rem;
+    text-align: center;
+    color: var(--beige);
+}
 
 /* ESTILOS DE CONTACTO */
 
@@ -280,7 +340,7 @@ box-shadow:  15px 15px 25px #dea640,
 }
 
 
-.s3{
+.s4{
     background: var(--beige);
     text-align: center;
     
