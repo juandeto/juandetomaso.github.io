@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
 }
@@ -157,21 +157,22 @@ transition: all 0.5s ease;
 }
 
 .main h1{
-    font-size: 10vw;
-    text-align: center;
+    line-height: 3.8rem;
+    font-size: 2vw;
+    text-align: left;
     margin: 20px 0;
 }
 
 .main h2{
-    font-size: 8vw;
+    font-size: 10vw;
     text-align: left;
     color: var(--skin);
-    margin: 15px 18px;
+    margin: 15px 0px;
     letter-spacing: 0.15rem;
 }
 
 .main h3{
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     text-align: center;
     font-weight: 300;
     letter-spacing: 0.196875rem;
@@ -180,6 +181,7 @@ transition: all 0.5s ease;
 
 .main-section{
 text-align: center;
+max-width: 800px;
 }
 
 .main img{
@@ -556,10 +558,11 @@ footer span{
     font-size: 0.8rem;
 }
     .main h1 {
-        font-size: 7vw;
+        font-size: 2vw;
+        font-weight: 400;
     }
     .main h2{
-        font-size: 4vw;
+        font-size: 6vw;
     }
     .main h3{
         font-size: 1rem;
@@ -599,7 +602,7 @@ footer span{
         width: 400px;
     }
     .card h2 {
-        font-size: 1.6rem;
+        font-size: 2.6rem;
     }
 
     .personal-data{
