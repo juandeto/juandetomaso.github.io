@@ -51,7 +51,6 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
     margin: 0 auto;
@@ -61,20 +60,30 @@ body{
 /* ESTILOS DEL HEADER */
 .header{
 width: 100%;
-display: flex;
-flex-direction: column;
-height: 10%;
+height: 60px;
+display: block;
+position: relative/*  */;
+background: #fff;
+z-index: 10;
 }
+
 
 .nav{
 list-style: none;
 width: 100%;
+height: 100%;
 }
 
+
+
 .hamburger{
-    position: relative;
-    top: 25%;
-    left: -5%;
+    position: absolute;
+    right: 5%;
+    margin-top: 16px;
+    color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width:30px;
     height: 30px;
     background: inherit;
@@ -82,14 +91,6 @@ width: 100%;
     align-self: flex-end;
     display: flex;
     transition: all 0.5s;
-}
-
-.hamburger{
-    color: var(--blue);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 25px;
     user-select: none;
     z-index: 10;
 }
@@ -146,6 +147,10 @@ z-index: 9;
     transform: translateX(0%);
     height: 100vh;
     opacity: 1;
+}
+
+.fix {
+    position: fixed;
 }
 
 .rotate1{
@@ -316,10 +321,33 @@ box-shadow: var(--shadow-elevation-high-1)
 
 /* ABOUT */
 .s3 {
+    position: relative;
     min-height: 100vh;
     width: 100%;
     padding: 16px 0;
 }
+
+.s3::before{
+    position: absolute;
+    left: 25%;
+    top: 0;
+    content: '';
+    width: 50%;
+    height: 2px;
+    background: var(--blue);
+}
+
+.s3::after{
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    content: '';
+    width: 50%;
+    height: 2px;
+    background: var(--blue);
+}
+
+
 
 .title-about {
     color: var(--blue);
@@ -667,12 +695,8 @@ footer span{
     .main img{
         width: 400px;
     }
-    .card h2 {
+    .card h3 {
         font-size: 2.6rem;
-    }
-
-    .project-section {
-        height: 70vh;
     }
 
     .s3 {
@@ -681,26 +705,6 @@ footer span{
         align-items: center;
         position: relative;
         padding: 32px;
-    }
-
-    .s3::before{
-        position: absolute;
-        left: 25%;
-        top: 0;
-        content: '';
-        width: 50%;
-        height: 2px;
-        background: var(--blue);
-    }
-
-    .s3::after{
-        position: absolute;
-        left: 25%;
-        bottom: 0;
-        content: '';
-        width: 50%;
-        height: 2px;
-        background: var(--blue);
     }
 
     .about-skills {
