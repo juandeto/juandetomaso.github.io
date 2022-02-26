@@ -63,6 +63,7 @@ body{
 width: 100%;
 display: flex;
 flex-direction: column;
+height: 10%;
 }
 
 .nav{
@@ -72,7 +73,7 @@ width: 100%;
 
 .hamburger{
     position: relative;
-    top: 100%;
+    top: 25%;
     left: -5%;
     width:30px;
     height: 30px;
@@ -125,6 +126,7 @@ width: 100%;
     transform: translateX(-100%);
 transition: all 0.5s ease;
 background: var(--skin);
+z-index: 9;
 }
 
 .menu-list li{
