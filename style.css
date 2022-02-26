@@ -48,10 +48,6 @@ body{
 
 .content1{
     background: var(--baige);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
     margin: 0 auto;
     
@@ -64,7 +60,6 @@ height: 60px;
 display: block;
 position: relative/*  */;
 background: #fff;
-z-index: 10;
 }
 
 
@@ -127,7 +122,6 @@ height: 100%;
     transform: translateX(-100%);
 transition: all 0.5s ease;
 background: var(--skin);
-z-index: 9;
 }
 
 .menu-list li{
@@ -206,7 +200,7 @@ z-index: 9;
 .main h2{
     display: block;
     font-weight: 400;
-    font-size: 3rem;
+    font-size: 2.8rem;
     text-align: left;
     color: var(--skin);
     margin: 15px 0px;
@@ -238,17 +232,8 @@ padding: 16px;
 
 .s2{
     margin: 80px auto;
+    padding-top: 40px;
 }
-
-/* .s2 {
-    color: var(--blue);
-    text-align: center;
-    font-size: 2rem;
-    padding-top: 40px ;
-    letter-spacing: 0.196875rem;
-    line-height: 1.875;
-    margin-bottom: 40px;
-} */
 
 
 .content-works h3{
@@ -526,10 +511,6 @@ footer span{
 
 
 @media (max-width: 330px){
-    .main{
-        width: 90%;
-    }
-    
 
 .main img{
     width: 260px;
