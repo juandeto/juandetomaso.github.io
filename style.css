@@ -191,10 +191,9 @@ background: var(--skin);
 
 .main h1{
     margin-top: 12px;
-    line-height: 3rem;
+    line-height: 2.8rem;
     font-size: 1.1rem;
     text-align: left;
-    margin: 20px 0;
     font-weight: 500;
 }
 
@@ -222,9 +221,9 @@ max-width: 800px;
 padding: 16px;
 }
 
-.main img{
+/* .main img{
     width: 300px;
-}
+} */
 
 
 
@@ -513,9 +512,9 @@ footer span{
 
 @media (max-width: 330px){
 
-.main img{
+/* .main img{
     width: 260px;
-}
+} */
 
 }
 @media (max-width: 390px){
@@ -675,9 +674,9 @@ footer span{
         width: 40%;
     }
 
-    .main img{
+    /* .main img{
         width: 400px;
-    }
+    } */
     .card h3 {
         font-size: 2.6rem;
     }
