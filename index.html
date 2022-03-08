@@ -34,21 +34,34 @@
             <section class="main-section">
               <h2>Hey there
                 Welcome</h2>
-              <h1>My name is Juan de Tomaso I'm a Front-end Developer. I like to create aesthetic Ul with user centric approach.</br> Thanks for visiting my website have a look at my portfolio and if you have any querry you can contact me.</h1>
+              <h1>My name is <mark class="yellowMark">Juan de Tomaso</mark> I'm a Front-end Developer. I like to create aesthetic Ul with user centric approach.</br> Thanks for visiting my website have a look at my portfolio and if you have any querry you can contact me.</h1>
             </section>
             <picture>
+              	<!-- 16:9 crop -->
               <source
-              media="(min-width: 1000px)"
-              srcset="images/devFoto.png 400w,
-              images/devFotoMedium.png 300w,
-              images/devFotoSmall.png 230w"
+              media="(min-width:1000px)"
+              srcset="images/devFoto.png"
               />
               <source
-              type="image/webp"
-              srcset="images/devFoto.webp 400w,
-              images/devFotoMedium.webp 300w,
-              images/devFotoSmall.webp 230w"
-            />
+              media="(min-width:400px)"
+              srcset="images/devFotoMedium.png"
+              />
+              <source
+              media="(max-width:400px)"
+              srcset="images/devFotoSmall.png"
+              />
+              <source
+              media="(min-width:1000px)"
+              srcset="images/devFoto.webp"
+              />
+              <source
+              media="(min-width:400px)"
+              srcset="images/devFotoMedium.webp"
+              />
+              <source
+              media="(max-width:400px)"
+              srcset="images/devFotoSmall.webp"
+              />
                <img
               src="images/devFoto.png"
               alt="fotopc"
