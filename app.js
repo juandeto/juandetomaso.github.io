@@ -22,20 +22,3 @@ const closeMenu=()=>{
     }
 }
 
-hamurgerBtn.addEventListener('click', toggleClass);
-menuBtn.forEach(btn => btn.addEventListener('click', closeMenu))
-
-
-const partialApply = (fn, ...fixedArgs) => {
-    debugger
-    return function (...remainingArgs) {
-      return fn.apply(this, fixedArgs.concat(remainingArgs));
-    };
-  };
-
-const add = (a, b) => a + b;
-
-
-const add10 = partialApply(add, 10);
-console.log('add10: ', add10)
-add10(5);
