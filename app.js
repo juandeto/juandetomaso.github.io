@@ -5,6 +5,7 @@ const menuBtn=document.querySelectorAll('.menu-list li');
 const stripe=document.getElementsByClassName('stripe');
 
 const toggleClass=()=>{
+    console.log('toggle func')
     menu.classList.toggle('show');
     nav.classList.toggle('fix')
     stripe[0].classList.toggle('rotate3');
@@ -22,3 +23,4 @@ const closeMenu=()=>{
     }
 }
 
+hamurgerBtn.addEventListener('click', () => toggleClass())

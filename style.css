@@ -226,20 +226,9 @@ padding: 16px;
 } */
 
 .yellowMark {
-    position: relative;
     background-color: #FCBD49;
-
 }
 
-.yellowMark::after{
-    position: absolute;
-    content: '';
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
 
 /* ESTILOS DE LA SECCION TRABAJOS */
 
