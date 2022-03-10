@@ -122,22 +122,7 @@ window.addEventListener("scroll", function(event) {
                 imgContainer[i].appendChild(img)
             }
             imgsCreated = true
-
-        }
-
-        if(distancePercentageAboutMe < 75 && !skillsCreated) {
-            // generate the portfolio thumbnails
-            skillsData.forEach(project => {
-                const container = document.createElement('figure')
-                container.classList.add("about-figure")
-
-                container.innerHTML = `
-                                    <img src=${project.src} alt=${project.alt} />
-                                    <figcaption>${project.title}</figcaption>
-                                        `
-                skillsSection.appendChild(container)
-            })
-            skillsCreated = true
+        
         }
 }, false);
 
