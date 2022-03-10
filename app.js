@@ -4,63 +4,41 @@ const menu=document.querySelector('.menu-list');
 const menuBtn=document.querySelectorAll('.menu-list li');
 const stripe=document.getElementsByClassName('stripe');
 const portfolioSection = document.getElementById('portfolio')
-const projectSection = document.querySelector('.project-section')
+const imgContainer = document.querySelectorAll('.img-container')
 const aboutmeSection = document.getElementById('aboutme')
 const skillsSection = document.querySelector('.about-skills')
 const projectsData = [
     {
-        title: 'Nook Deco Ecommerce',
         src: 'images/sofa.png',
         alt: 'violet sofa',
-        link: "https://nookdeco.com.ar/"
     },
     {
-        title: 'NFT Marketplace',
         src: 'images/nft.png',
         alt: 'custom Mtv logo, that says Nft',
-        link: "https://nft-detomaso.vercel.app/"
     },
     {
-        title: 'Hamburger Web App',
         src: 'images/hamburgerPic.png',
         alt: 'double hamburger',
-        link: "https://projectburgerapp.netlify.app/"
     },
     {
-        title: 'Photo Portfolio',
         src: 'images/camerapic.png',
         alt: 'photo camera',
-        link: "https://angelesmorgan.com/"
     },
     {
-        title: 'Nook Deco Ecommerce',
-        src: 'images/sofa.png',
-        alt: 'violet sofa',
-        link: "https://nookdeco.com.ar/"
-    },
-    {
-        title: 'Amazon Clon',
         src: 'images/amazonLogo.png',
         alt: 'amazon logo',
-        link: "https://fakeamazonproject.netlify.app/"
     },
     {
-        title: 'Memory Game',
         src: 'images/brain.png',
         alt: 'brain draw',
-        link: "https://projectmemorygame.netlify.app/"
     },
     {
-        title: 'Horse Game',
         src: 'images/caballoCartoon-removebg-preview.png',
         alt: 'bo jack character (horse)',
-        link: "https://projecthorsegame.netlify.app"
     },
     {
-        title: 'Drum Kit',
         src: 'images/drumpic.png',
         alt: 'drum',
-        link: "https://projectdrumkit.netlify.app"
     },
 ]
 const skillsData = [
@@ -90,9 +68,7 @@ const skillsData = [
         title: 'Sass'
     }
 ]
-
-
-let projectsCreated = false;
+let imgsCreated = false;
 let skillsCreated = false;
 
 const toggleClass=()=>{
@@ -105,6 +81,7 @@ const toggleClass=()=>{
 }
 
 const closeMenu=()=>{
+    console.log('close btn!')
     if(menu.classList.contains('show')){
         menu.classList.remove('show');
         nav.classList.remove('fix')
@@ -114,7 +91,16 @@ const closeMenu=()=>{
     }
 }
 
+menuBtn.forEach(btn => {
+    btn.addEventListener('click', () => closeMenu())
+})
+
 hamurgerBtn.addEventListener('click', () => toggleClass())
+
+
+
+
+
 
 window.addEventListener("scroll", function(event) {
         let windowHeight = window.innerHeight;
@@ -123,24 +109,19 @@ window.addEventListener("scroll", function(event) {
 
         let distancePercentagePortfolio = (diffFromTopPorfoltio / windowHeight) * 100;
         let distancePercentageAboutMe = (diffFromTopAboutMe / windowHeight) * 100;
-    console.log('distancePercentageAboutMe: ', distancePercentageAboutMe)
-        if(distancePercentagePortfolio < 75 && !projectsCreated) {
+
+        if(distancePercentagePortfolio < 75 && !imgsCreated) {
             // generate the portfolio thumbnails
-            projectsData.forEach(project => {
-                const container = document.createElement('article')
-                container.classList.add("project")
-                container.setAttribute('data-aos', "fade-up")
-                container.innerHTML = `
-                                        <a  href=${project.link} target="_blank" rel="noopener">
-                                        <img
-                                            src=${project.src}
-                                            alt=${project.alt}
-                                        />
-                                        <span>${project.title}</span>
-                                        `
-                projectSection.appendChild(container)
-            })
-            projectsCreated = true
+            console.log('imgContainer: ', imgContainer)
+            for(let i = 0; i < imgContainer.length; i++) {
+                const img = document.createElement('img')
+                console.log('projectsData[i]: ', i, projectsData[i])
+                img.setAttribute('src', projectsData[i].src)
+                img.setAttribute('alt', projectsData[i].alt)
+                imgContainer[i].classList.remove('background')
+                imgContainer[i].appendChild(img)
+            }
+            imgsCreated = true
 
         }
 

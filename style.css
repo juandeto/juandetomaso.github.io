@@ -283,12 +283,29 @@ box-shadow: var(--shadow-elevation-high-1)
     display: flex;
     flex-direction: column;
 }
-.project img{
-    margin: auto;
-    margin-bottom: 10px;
+
+.project .img-container {
     width: 120px;
     height: 120px;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+
+.img-container img{
+    margin: auto 0;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
+
+}
+
+.project .background {
+    background-size: 400% 400%;
+    background: linear-gradient(-45deg, var(--skin), var(--beige));
+    -webkit-animation: AnimationName 1s ease infinite;
+    -moz-animation: AnimationName 1s ease infinite;
+    animation: AnimationName 1s ease infinite;
 
 }
 
@@ -297,6 +314,23 @@ box-shadow: var(--shadow-elevation-high-1)
     font-weight: 600;
     letter-spacing: 0.196875rem;
     line-height: 1.875;
+}
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 27%}
+    50%{background-position:100% 74%}
+    100%{background-position:0% 27%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 27%}
+    50%{background-position:100% 74%}
+    100%{background-position:0% 27%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 27%}
+    50%{background-position:100% 74%}
+    100%{background-position:0% 27%}
 }
 
 .title-web{
@@ -524,12 +558,7 @@ footer span{
         width: 245px;
         height: 240px;
     }
-
-    .project img{
-        width: 225px;
-        height: 110px;
-    }
-
+    
     .card h2 {
         font-size: 1rem;
     }
